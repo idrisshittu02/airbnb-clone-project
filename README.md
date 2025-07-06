@@ -145,3 +145,25 @@ Represents reservation details made by users.
 -   A booking **belongs to one user**
 -   A booking **belongs to one property**
 -   A booking may be **linked to a**
+
+## Feature Breakdown
+
+### 👤 User Management
+
+This feature allows users to register, log in, and manage their profiles. It handles authentication and authorization, ensuring secure access to platform resources based on user roles (guest or host).
+
+### 🏘️ Property Management
+
+Hosts can list new properties by adding titles, descriptions, photos, pricing, and availability. This feature enables property owners to showcase their rentals and manage listing details easily.
+
+### 📆 Booking System
+
+Guests can search for properties and make reservations based on availability. The system tracks booking dates, calculates total costs, and prevents double-bookings for the same property.
+
+### 💬 Review System
+
+After staying at a property, guests can leave reviews and ratings. This promotes trust and transparency on the platform and helps future users make informed decisions.
+
+### 💳 Payment Integration
+
+Secure payment pr
