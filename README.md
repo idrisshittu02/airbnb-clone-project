@@ -167,3 +167,21 @@ After staying at a property, guests can leave reviews and ratings. This promotes
 ### 💳 Payment Integration
 
 Secure payment pr
+
+## API Security
+
+Ensuring the security of backend APIs is critical to maintaining user trust, protecting sensitive data, and preventing malicious activities. Below are the key security measures that will be implemented in the Airbnb Clone Project:
+
+### 🔐 Authentication
+
+Only verified users should be able to access certain routes. We’ll use token-based authentication (e.g., JWT) to securely validate users during login and protect session data.
+
+**Why it's important:** Prevents unauthorized access to personal data, listings, and bookings. Protects user accounts from misuse.
+
+---
+
+### 🛡 Authorization
+
+Different users (guests, hosts, admins) will have different levels of access. We’ll implement role-based access control (RBAC) to ensure that users can only perform actions they are permitted to.
+
+**Why it's important:** Prevents users from editing or deleting listings they don’t own, and restricts admin-only actions from regular
