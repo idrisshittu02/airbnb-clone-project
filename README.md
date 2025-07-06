@@ -185,3 +185,27 @@ Only verified users should be able to access certain routes. We’ll use token-b
 Different users (guests, hosts, admins) will have different levels of access. We’ll implement role-based access control (RBAC) to ensure that users can only perform actions they are permitted to.
 
 **Why it's important:** Prevents users from editing or deleting listings they don’t own, and restricts admin-only actions from regular
+
+## CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**. It is a development practice where code changes are automatically built, tested, and deployed. The goal is to ensure that software is released frequently, reliably, and with minimal manual intervention.
+
+### Why It Matters
+
+Implementing a CI/CD pipeline helps the team:
+
+-   Catch bugs early through automated testing
+-   Reduce manual deployment errors
+-   Speed up the release cycle
+-   Maintain code quality across different environments
+
+### Tools We Plan to Use
+
+-   **GitHub Actions**: Automates workflows like testing, linting, and deployment directly from the GitHub repository.
+-   **Docker**: Used to containerize the application for consistent deployment across environments.
+-   **Heroku / AWS / Render**: Potential hosting platforms for automated deployment after successful builds and tests.
+-   **pytest / unittest**: For running backend tests during the CI phase.
+
+By integrating CI/CD into our development process, we can streamline collaboration and ensure smooth, reliable updates to the Airbnb Clone Project.
