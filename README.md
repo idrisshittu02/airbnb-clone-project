@@ -46,3 +46,37 @@ Oversees the entire project, coordinates between team members, sets deadlines, a
 Focuses on the look and feel of the product. Designs user-friendly and accessible interfaces, creates wireframes and prototypes, and collaborates closely with frontend developers.
 
 ### 7. Quality Assurance (QA) En
+
+## Technology Stack
+
+### Django
+
+A high-level Python web framework used to build secure, scalable, and maintainable web applications. In this project, Django is used for managing backend logic, handling HTTP requests, and building RESTful APIs.
+
+### PostgreSQL
+
+An advanced open-source relational database system. It is used to store and manage structured data like user profiles, listings, and bookings in a reliable and efficient way.
+
+### GraphQL
+
+A query language for APIs that enables clients to request exactly the data they need. It allows for more flexible and efficient communication between the frontend and backend compared to traditional REST APIs.
+
+### HTML5
+
+The standard markup language for structuring web content. Used for creating the structure and layout of the frontend pages.
+
+### CSS3
+
+A style sheet language used for describing the presentation of HTML documents. It is used to design and style the user interface.
+
+### JavaScript
+
+A programming language that enables interactive features on the frontend, such as dynamic content updates and form validation.
+
+### Git & GitHub
+
+Git is a version control system for tracking changes in source code. GitHub is a platform for hosting and collaborating on Git repositories. Both are used for managing project code, tracking progress, and enabling team collaboration.
+
+### Docker (optional)
+
+Used to containerize the application and its services, making it easier to deploy and maintain consistent environments across development and production.
