@@ -80,3 +80,68 @@ Git is a version control system for tracking changes in source code. GitHub is a
 ### Docker (optional)
 
 Used to containerize the application and its services, making it easier to deploy and maintain consistent environments across development and production.
+
+## Database Design
+
+This section outlines the key entities and relationships in the Airbnb Clone Project's database.
+
+### 🧑 Users
+
+Represents the individuals using the platform.
+
+**Key Fields:**
+
+-   `id` (Primary Key)
+-   `name`
+-   `email`
+-   `password_hash`
+-   `role` (guest or host)
+
+**Relationships:**
+
+-   A user can **own multiple properties**
+-   A user can **make multiple bookings**
+-   A user can **write multiple reviews**
+-   A user can **make payments**
+
+---
+
+### 🏠 Properties
+
+Represents listings created by hosts.
+
+**Key Fields:**
+
+-   `id` (Primary Key)
+-   `user_id` (Foreign Key → Users)
+-   `title`
+-   `description`
+-   `location`
+-   `price_per_night`
+
+**Relationships:**
+
+-   A property **belongs to one user (host)**
+-   A property can have **many bookings**
+-   A property can have **many reviews**
+
+---
+
+### 📆 Bookings
+
+Represents reservation details made by users.
+
+**Key Fields:**
+
+-   `id` (Primary Key)
+-   `user_id` (Foreign Key → Users)
+-   `property_id` (Foreign Key → Properties)
+-   `start_date`
+-   `end_date`
+-   `total_price`
+
+**Relationships:**
+
+-   A booking **belongs to one user**
+-   A booking **belongs to one property**
+-   A booking may be **linked to a**
